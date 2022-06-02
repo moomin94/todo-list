@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background-color: #f1f1f1;
+  font-family: "Jua", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.todo__input {
+  width: 100%;
+  display: flex;
+}
+.todo__input--text {
+  width: 85%;
+  font-size: 25px;
+  padding: 15px;
+  background-color: #323e4f;
+  color: white;
+  font-family: "Jua", sans-serif;
+}
+.todo__input--btn {
+  font-size: 35px;
+  width: 15%;
+  background-color: #26d2af;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.todo__list {
+  width: 100%;
+  background-color: white;
+}
+.todo__list li {
+  padding: 15px 10px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+  font-size: 25px;
+}
+.todo__list li input {
+  width: 18px;
+  height: 18px;
+}
+.todo__list li span {
+  margin-left: 15px;
+}
+.todo__list li button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border: 0;
+  padding: 5px 8px;
+  background-color: #323e4f;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  cursor: pointer;
+}
+.todo__list li button:active {
+  transform: scale(0.95);
+}
